@@ -1,0 +1,208 @@
+.location>h5{
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+.location>p{
+  margin: 0px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.vertical-line{
+  height: 55px;
+  border-left: 2px solid #f2f2f2;
+}
+.search-div{
+  padding: 0px 12px;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 12px;
+  background: rgb(248, 248, 248);
+  color: rgb(130, 130, 130);
+}
+.search-div>input{
+  border: none;
+  background-color: transparent;
+  /* this means giving no bg hence taking bg of parent */
+  width: 40vw;
+  height: 45px;
+}
+::placeholder{
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+}
+.my-cart{
+  background-color: #0c831f !important;
+  /* whenever you want to ovveride an existing BS css use !important */
+  font-size: 14px !important;
+}
+
+/* scrollable div */
+.my-categories{
+  width: 85%;
+}
+/* .my-para{
+  white-space: nowrap;
+  /* this makes the page scrollable and does not wrap itself to the nextline 
+  if we write pre then the spaces will not collapse
+  and normal(default) excludes all the extra spaces
+} */
+.my-container{
+ margin: auto;
+  width: 85%;
+ overflow-x: auto; 
+ /* we need to write overflow-x to allow scrolling
+ we can also write scroll instead of auto 
+ to make a vertical scrollable div write 
+ overflow-y:scroll;*/
+}
+.my-list{
+  white-space: nowrap;
+}
+.my-list>img{
+  padding-inline: 10px;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+/* the above is used to remove the scrolbar */
+
+/* scrollable div */
+
+.my-card{
+  width: 179px;
+  margin-inline: 10px;
+}
+.my-card-time{
+  height: 10px;
+  width: fit-content;
+  border-radius: 4px;
+  background-color: rgb(248, 248, 248);
+  padding: 0px 4px;
+  font-weight: 700;
+  font-size: 9px;
+  color: rgb(54, 54, 54);
+}
+.my-card-title{
+  color: rgb(31, 31, 31);
+  font-weight: 600;
+  font-size: 13px;
+}
+.my-card-weight{
+  color: #6c6c6c;
+  font-size: 13px;
+}
+.card-price{
+  color: rgb(31, 31, 31);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 10px;
+}
+.strike{
+  color: #6c6c6c; 
+  font-size: 12px;
+}
+.category-section{
+  width: 85%;
+  margin: auto;
+}
+.category-section-row{
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.my-footer{
+  width: 85%;
+  margin: auto;
+}
+.row-3{
+  text-align: justify;
+  color: #6c6c6c; 
+  font-size: 15px;
+  padding: 10px;
+}
+.row-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.social-btn{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-inline: 10px;
+}
+.social{
+  display: flex;
+}
+.row-2>p{
+  width: 30%;
+  text-align: justify;
+  color: #6c6c6c; 
+  font-size: 12px;
+}
+.download-section>p{
+  color: #666666;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 16px;
+}
+.download-btns{
+  background-color: #223d4f;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  border: none;
+  padding: 10px;
+}
+.row-1{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.useful-links{
+  flex: 2;
+}
+.categories-links{
+  flex: 3;
+  /* giving flex the ration 2:3 */
+}
+table{
+  width: 100%;
+}
+td{
+  padding: 3px 10px;
+  color: #666666;
+  font-size: 14px;
+}
+
+@media screen and (max-width:768px){
+  nav,.row-2,.row-1{
+    flex-direction: column !important;
+  }
+  .vertical-line,.hero-section>img{
+    display: none;
+  }
+  .row-2>p,.search-div,.nav-btn{
+    width: 90%;
+  }
+  .row-1>div,.my-container{
+    margin-top: 20px;
+  }
+  .row-1>div>h2,.row-1>div>h4,button{
+    text-align: center;
+  }
+  td{
+    text-align: center;
+  }
+  .social{
+    margin-top: 10px;
+  }
+}
