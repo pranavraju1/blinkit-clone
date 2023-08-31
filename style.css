@@ -101,6 +101,7 @@
 .strike{
   color: #6c6c6c; 
   font-size: 12px;
+  display: none;
 }
 .category-section{
   width: 85%;
