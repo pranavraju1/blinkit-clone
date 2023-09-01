@@ -51,6 +51,9 @@ nav{
 .my-categories{
   width: 85%;
 }
+.my-categories>img{
+  height: 250px;
+}
 /* .my-para{
   white-space: nowrap;
   /* this makes the page scrollable and does not wrap itself to the nextline 
@@ -198,12 +201,24 @@ td{
   font-size: 14px;
 }
 
+/* for mock */
+.new-foot{
+  /* border: 3px solid red; */
+  width: 100%;
+  height: 100px;
+}
+
+/* for mock */
+
 @media screen and (max-width:768px){
   nav,.row-2,.row-1{
     flex-direction: column !important;
   }
   .vertical-line,.hero-section>img{
     display: none;
+  }
+  .my-container{
+    margin-top: 200px !important;
   }
   .row-2>p,.search-div,.nav-btn{
     width: 90%;
